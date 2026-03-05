@@ -11,4 +11,8 @@ export default function App() {
       </NavigationContainer>
     </CoursesProvider>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4

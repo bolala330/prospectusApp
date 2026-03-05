@@ -2,7 +2,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
+<<<<<<< HEAD
 import WelcomeScreen from '../screens/WelcomeScreen';
+=======
+>>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4
 import FacultiesScreen from '../screens/FacultiesScreen';
 import CoursesScreen from '../screens/CoursesScreen';
 import CourseDetailScreen from '../screens/CourseDetailScreen';
@@ -13,6 +16,7 @@ const Stack = createStackNavigator();
 
 const FacultiesStack = () => (
   <Stack.Navigator>
+<<<<<<< HEAD
     <Stack.Screen 
       name="Faculties" 
       component={FacultiesScreen} 
@@ -32,6 +36,15 @@ const FacultiesStack = () => (
 );
 
 function MainTabs() {
+=======
+    <Stack.Screen name="Faculties" component={FacultiesScreen} options={{ title: 'Faculties' }} />
+    <Stack.Screen name="Courses" component={CoursesScreen} options={{ title: 'Courses' }} />
+    <Stack.Screen name="CourseDetail" component={CourseDetailScreen} options={{ title: 'Course Details' }} />
+  </Stack.Navigator>
+);
+
+export default function AppNavigator() {
+>>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -48,6 +61,7 @@ function MainTabs() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
+<<<<<<< HEAD
       <Tab.Screen 
         name="Faculties" 
         component={FacultiesStack} 
@@ -80,3 +94,10 @@ export default function AppNavigator() {
     </Stack.Navigator>
   );
 }
+=======
+      <Tab.Screen name="Faculties" component={FacultiesStack} options={{ headerShown: false }} />
+      <Tab.Screen name="Quiz" component={QuizScreen} />
+    </Tab.Navigator>
+  );
+}
+>>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4

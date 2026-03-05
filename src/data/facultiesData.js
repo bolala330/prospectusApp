@@ -59,4 +59,8 @@
       { id: 'c25', name: 'Digital Marketing', description: 'Online promotion strategies.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4', minCredits: 2 }
     ]
   }
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4
