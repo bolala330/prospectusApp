@@ -2,6 +2,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
+import WelcomeScreen from '../screens/WelcomeScreen';
 import FacultiesScreen from '../screens/FacultiesScreen';
 import CoursesScreen from '../screens/CoursesScreen';
 import CourseDetailScreen from '../screens/CourseDetailScreen';
@@ -12,13 +13,25 @@ const Stack = createStackNavigator();
 
 const FacultiesStack = () => (
   <Stack.Navigator>
-    <Stack.Screen name="Faculties" component={FacultiesScreen} options={{ title: 'Faculties' }} />
-    <Stack.Screen name="Courses" component={CoursesScreen} options={{ title: 'Courses' }} />
-    <Stack.Screen name="CourseDetail" component={CourseDetailScreen} options={{ title: 'Course Details' }} />
+    <Stack.Screen 
+      name="Faculties" 
+      component={FacultiesScreen} 
+      options={{ title: 'Faculties' }} 
+    />
+    <Stack.Screen 
+      name="Courses" 
+      component={CoursesScreen} 
+      options={{ title: 'Courses' }} 
+    />
+    <Stack.Screen 
+      name="CourseDetail" 
+      component={CourseDetailScreen} 
+      options={{ title: 'Course Details' }} 
+    />
   </Stack.Navigator>
 );
 
-export default function AppNavigator() {
+function MainTabs() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -35,8 +48,35 @@ export default function AppNavigator() {
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Faculties" component={FacultiesStack} options={{ headerShown: false }} />
-      <Tab.Screen name="Quiz" component={QuizScreen} />
+      <Tab.Screen 
+        name="Faculties" 
+        component={FacultiesStack} 
+        options={{ headerShown: false }} 
+      />
+      <Tab.Screen 
+        name="Quiz" 
+        component={QuizScreen} 
+        options={{ title: 'Quiz' }} 
+      />
     </Tab.Navigator>
+  );
+}
+
+export default function AppNavigator() {
+  return (
+    <Stack.Navigator>
+      {/* Hide header on Welcome screen */}
+      <Stack.Screen 
+        name="Welcome" 
+        component={WelcomeScreen} 
+        options={{ headerShown: false }} 
+      />
+      {/* Show headers with back arrow on all other screens */}
+      <Stack.Screen 
+        name="MainTabs" 
+        component={MainTabs} 
+        options={{ headerShown: false }} 
+      />
+    </Stack.Navigator>
   );
 }

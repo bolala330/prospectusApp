@@ -2,11 +2,9 @@
 import { facultiesData } from '../data/facultiesData';
 
 const CoursesContext = createContext();
-
 export const useCourses = () => useContext(CoursesContext);
 
 export const CoursesProvider = ({ children }) => {
-  // Initialize courses with rating 0
   const [courses, setCourses] = useState(() => {
     const allCourses = {};
     facultiesData.forEach(faculty => {
@@ -17,12 +15,14 @@ export const CoursesProvider = ({ children }) => {
     return allCourses;
   });
 
-  const updateRating = (courseId) => {
+  const updateRating = (courseId, newRating = null) => {
     setCourses(prev => ({
       ...prev,
       [courseId]: {
         ...prev[courseId],
-        rating: prev[courseId].rating < 6 ? prev[courseId].rating + 1 : 6
+        rating: newRating !== null 
+          ? newRating 
+          : prev[courseId].rating < 6 ? prev[courseId].rating + 1 : 6
       }
     }));
   };

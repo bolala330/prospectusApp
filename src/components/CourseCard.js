@@ -2,25 +2,28 @@
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import RatingButton from './RatingButton';
+import * as Animatable from 'react-native-animatable';
 
 export default function CourseCard({ course, onRate, onPlayVideo }) {
   return (
-    <View style={styles.card}>
-      <Image source={{ uri: course.image }} style={styles.image} />
-      <View style={styles.content}>
-        <Text style={styles.name}>{course.name}</Text>
-        <Text style={styles.description} numberOfLines={2}>{course.description}</Text>
-        <View style={styles.row}>
-          <View style={styles.ratingContainer}>
-            <Text style={styles.ratingText}>Rating: {course.rating}/6</Text>
-            <RatingButton onPress={() => onRate(course.id)} disabled={course.rating >= 6} />
+    <Animatable.View animation="fadeInUp" duration={600}>
+      <View style={styles.card}>
+        <Image source={{ uri: course.image }} style={styles.image} />
+        <View style={styles.content}>
+          <Text style={styles.name}>{course.name}</Text>
+          <Text style={styles.description} numberOfLines={2}>{course.description}</Text>
+          <View style={styles.row}>
+            <View style={styles.ratingContainer}>
+              <Text style={styles.ratingText}>Rating: {course.rating}/6</Text>
+              <RatingButton onPress={() => onRate(course.id)} disabled={course.rating >= 6} />
+            </View>
+            <TouchableOpacity onPress={() => onPlayVideo(course.id)} style={styles.videoButton}>
+              <Ionicons name="play-circle" size={32} color="#4A90E2" />
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity onPress={() => onPlayVideo(course.id)} style={styles.videoButton}>
-            <Ionicons name="play-circle" size={32} color="#4A90E2" />
-          </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </Animatable.View>
   );
 }
 
