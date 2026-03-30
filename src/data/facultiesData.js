@@ -1,66 +1,64 @@
-﻿export const facultiesData = [
+export const faculties = [
   {
     id: 'f1',
-    name: 'Faculty of Architecture',
-    image: 'https://images.unsplash.com/photo-1541976590-7139412c7b3b?w=400',
+    name: 'Faculty of Design Innovation',
+    image: 'https://images.unsplash.com/photo-1505685296765-3a2736de412f', // design classroom
     courses: [
-      { id: 'c1', name: 'Architectural Design', description: 'Learn to design buildings and spaces.', image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', minCredits: 3 },
-      { id: 'c2', name: 'Urban Planning', description: 'Plan sustainable cities and communities.', image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', minCredits: 2 },
-      { id: 'c3', name: 'Landscape Architecture', description: 'Design outdoor environments.', image: 'https://images.unsplash.com/photo-1557429287-b2e26467fc2b?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', minCredits: 1 },
-      { id: 'c4', name: 'Interior Design', description: 'Create functional indoor spaces.', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4', minCredits: 2 },
-      { id: 'c5', name: 'Sustainable Design', description: 'Eco-friendly architecture.', image: 'https://images.unsplash.com/photo-1542607917-7c9e1979c6d7?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4', minCredits: 4 }
-    ]
+      { id: 'c1', name: 'Diploma in Creative Advertising', description: 'Develop creative concepts and campaigns for brands.', image: 'https://images.unsplash.com/photo-1503602642458-232111445657', video: 'https://www.youtube.com/watch?v=QxJ8OaX7FvU', rating: 0 },
+      { id: 'c2', name: 'Diploma in Graphic Design', description: 'Master visual communication and digital design.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=OaX7f0xZf2k', rating: 0 },
+      { id: 'c3', name: 'Diploma in Fashion and Apparel Design', description: 'Learn fashion illustration, pattern making and garment construction.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=JtZbYJzGkXo', rating: 0 },
+      { id: 'c4', name: 'Diploma in Interior Design', description: 'Create functional and aesthetic interior spaces.', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', video: 'https://www.youtube.com/watch?v=YwVfX1g0h6E', rating: 0 },
+      { id: 'c5', name: 'Diploma in Multimedia Design', description: 'Combine graphics, animation and interactive media.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=VvQyX0QjKjM', rating: 0 },
+    ],
   },
   {
     id: 'f2',
-    name: 'Faculty of Business',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400',
+    name: 'Faculty of Communication, Media and Broadcasting',
+    image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', // broadcasting studio
     courses: [
-      { id: 'c6', name: 'Marketing', description: 'Promote products and services.', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4', minCredits: 2 },
-      { id: 'c7', name: 'Finance', description: 'Manage money and investments.', image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4', minCredits: 4 },
-      { id: 'c8', name: 'Entrepreneurship', description: 'Start and run your own business.', image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4', minCredits: 3 },
-      { id: 'c9', name: 'International Business', description: 'Global trade strategies.', image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreet.mp4', minCredits: 5 },
-      { id: 'c10', name: 'Human Resources', description: 'Manage people and culture.', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', minCredits: 2 }
-    ]
+      { id: 'c6', name: 'Degree in Professional Communication', description: 'Strategic communication for corporate and public relations.', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c', video: 'https://www.youtube.com/watch?v=G7xvZpQ9QjM', rating: 0 },
+      { id: 'c7', name: 'Degree in Broadcasting & Journalism', description: 'News reporting, production and ethical journalism.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=ZpQ9QjM7xvG', rating: 0 },
+      { id: 'c8', name: 'Diploma in Television and Film Production', description: 'Hands‑on training in directing, editing and cinematography.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d', video: 'https://www.youtube.com/watch?v=JtZbYJzGkXo', rating: 0 },
+      { id: 'c9', name: 'Diploma in Broadcasting (Radio and TV)', description: 'Techniques for live broadcasting and content creation.', image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', video: 'https://www.youtube.com/watch?v=YwVfX1g0h6E', rating: 0 },
+      { id: 'c10', name: 'Diploma in Public Relations', description: 'Manage brand image and media relations.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=VvQyX0QjKjM', rating: 0 },
+    ],
   },
   {
     id: 'f3',
-    name: 'Faculty of Information Technology',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    name: 'Faculty of Architecture and the Built Environment',
+    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', // architecture students
     courses: [
-      { id: 'c11', name: 'Software Engineering', description: 'Build applications and systems.', image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', minCredits: 4 },
-      { id: 'c12', name: 'Network Security', description: 'Protect data and infrastructure.', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4', minCredits: 5 },
-      { id: 'c13', name: 'Data Science', description: 'Analyze and interpret complex data.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4', minCredits: 4 },
-      { id: 'c14', name: 'Multimedia Computing', description: 'Combine media and tech.', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', minCredits: 3 },
-      { id: 'c15', name: 'Game Development', description: 'Create interactive games.', image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', minCredits: 2 }
-    ]
+      { id: 'c12', name: 'Diploma in Architectural Technology', description: 'Technical and design skills for building projects.', image: 'https://images.unsplash.com/photo-1503602642458-232111445657', video: 'https://www.youtube.com/watch?v=ArchitectureBasics', rating: 0 },
+      { id: 'c13', name: 'Diploma in Interior Architecture', description: 'Spatial design and renovation of interior environments.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=InteriorDesignBasics', rating: 0 },
+      { id: 'c14', name: 'Diploma in Landscape Architecture', description: 'Design outdoor spaces, parks and gardens.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=LandscapeArchitectureIntro', rating: 0 },
+    ],
   },
   {
     id: 'f4',
-    name: 'Faculty of Design',
-    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400',
+    name: 'Faculty of Business and Globalization',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c', // business classroom
     courses: [
-      { id: 'c16', name: 'Graphic Design', description: 'Visual communication.', image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4', minCredits: 2 },
-      { id: 'c17', name: 'Animation', description: 'Bring characters to life.', image: 'https://images.unsplash.com/photo-1536242918817-d4d8565e55d4?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4', minCredits: 3 },
-      { id: 'c18', name: 'Photography', description: 'Capture moments artistically.', image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4', minCredits: 1 },
-      { id: 'c19', name: 'Fashion Design', description: 'Design clothing and accessories.', image: 'https://images.unsplash.com/photo-1558769132-cb1c458a3f9d?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4', minCredits: 3 },
-      { id: 'c20', name: 'Industrial Design', description: 'Design products for mass production.', image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4', minCredits: 5 }
-    ]
+      { id: 'c17', name: 'Degree in International Business', description: 'Global trade, cross‑cultural management and strategy.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=ShaneHummusInternationalBusiness', rating: 0 },
+      { id: 'c18', name: 'Degree in Entrepreneurship', description: 'Start and scale innovative ventures.', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d', video: 'https://www.youtube.com/watch?v=EntrepreneurshipBasics', rating: 0 },
+      { id: 'c19', name: 'Degree in Human Resource Management', description: 'Talent acquisition, development and labour relations.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=HRManagementIntro', rating: 0 },
+    ],
   },
   {
     id: 'f5',
-    name: 'Faculty of Communication',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400',
+    name: 'Faculty of Creativity in Tourism and Hospitality',
+    image: 'https://images.unsplash.com/photo-1581090700227-4c4d1a3f3f3f', // tourism students
     courses: [
-      { id: 'c21', name: 'Journalism', description: 'Report news and stories.', image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4', minCredits: 2 },
-      { id: 'c22', name: 'Public Relations', description: 'Manage brand image.', image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreet.mp4', minCredits: 3 },
-      { id: 'c23', name: 'Broadcasting', description: 'Produce radio/TV content.', image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4', minCredits: 4 },
-      { id: 'c24', name: 'Film Production', description: 'Create movies and videos.', image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', minCredits: 4 },
-      { id: 'c25', name: 'Digital Marketing', description: 'Online promotion strategies.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400', video: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4', minCredits: 2 }
-    ]
-  }
-<<<<<<< HEAD
+      { id: 'c23', name: 'Degree in Tourism Management', description: 'Strategic planning and marketing for tourism.', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', video: 'https://www.youtube.com/watch?v=TourismManagementIntro', rating: 0 },
+      { id: 'c24', name: 'Diploma in Hotel Management', description: 'Front office, housekeeping and food & beverage management.', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f', video: 'https://www.youtube.com/watch?v=HotelManagementBasics', rating: 0 },
+    ],
+  },
+  {
+    id: 'f6',
+    name: 'Faculty of Information and Communication Technology',
+    image: 'https://images.unsplash.com/photo-1503602642458-232111445657', // ICT lab
+    courses: [
+      { id: 'c28', name: 'Degree in Software Engineering with Multimedia', description: 'Build software with rich media and interactive elements.', image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2', video: 'https://www.youtube.com/watch?v=SLGeekSoftwareEngineering', rating: 0 },
+      { id: 'c29', name: 'Degree in Information Technology', description: 'Networks, databases and systems administration.', image: 'https://images.unsplash.com/photo-1520975918318-3c0c6f2f1c8f', video: 'https://www.youtube.com/watch?v=MonashSoftwareEngineering', rating: 0 },
+    ],
+  },
 ];
-=======
-];
->>>>>>> 5060a9564fcfbe5e736cbeb009a54c0e3b94a5b4
